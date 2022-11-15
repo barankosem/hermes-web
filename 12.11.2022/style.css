@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --primary-color: rgb(3,170,25);
+  --secondary-color:rgb(7,74,175);
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+}
+header {
+  background: url("showcase.jpg") no-repeat center center/cover;
+}
+body {
+  font-family: "roboto", sans-serif;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+a {
+  color: var(--dark-color);
+}
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul a {
+  color: var(--light-color);
+  text-transform: capitalize;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+.navbar ul a:hover {
+  border-bottom: var(--primary-color) 2px solid;
+}
+.navbar .logo {
+  font-weight: 700;
+}
+.content {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 1100;
+  font-size: 30px;
+  color: white;
+}
+.content p {
+  margin: 25px 0;
+  font-size: 20px;
+}
+
+.text-primary,
+.fa-book-open {
+  color: var(--primary-color);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero * {
+  z-index: 10;
+}
+.main {
+  display: flex;
+  text-align: center;
+  margin: 30px;
+}
+.main .fa-solid {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding: 15px 10px;
+}
+.main p {
+  padding: 10px;
+  margin: 10px;
+}
+.last-part {
+  display: flex;
+  margin: 30px 0;
+  height: 600px;
+}
+.people-img {
+  flex: 1;
+  background: url("/images/home/people.jpg") no-repeat center center/cover;
+}
+.text-last {
+  color: var(--light-color);
+  padding: 30px 10px;
+  padding-left: 40px;
+ 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: 
+    var(--primary-color);
+}
+
+.text-last h1 {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 40px;
+}
+.text-last h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+.text-last p{
+  margin-bottom: 15px;
+}

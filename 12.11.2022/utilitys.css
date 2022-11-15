@@ -1,0 +1,19 @@
+.btn-primary {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 17px;
+  color: white;
+}
+.btn-secondary {
+  border: 2px solid var(--light-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 5px 10px 5px;
+  font-weight: 600px;
+  color: var(--light-color);
+  width: 150px;
+  text-align: center;
+}
